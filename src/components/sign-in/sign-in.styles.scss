@@ -1,0 +1,24 @@
+.sign-in {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  .title {
+    margin: 10px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.custom-button:focus {
+  outline: none;
+}
+.custom-button.google-sign-in {
+  background-color: #4285f4;
+  color: #fff;
+  &:hover {
+    background-color: #357ae8;
+    border: none;
+    color: #fff;
+  }
+}
