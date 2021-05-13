@@ -34,4 +34,47 @@
   cursor: pointer;
   padding: 10px 15px;
 }
+
+.custom-button.inverted {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.custom-button.inverted:hover {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.custom-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.collection-item {
+  position: relative;
+}
+
+.collection-item .custom-button {
+  opacity: 0.7;
+  position: absolute;
+  top: 255px;
+  display: none;
+}
+
+.collection-item:hover .image {
+  opacity: 0.8;
+}
+
+.collection-item:hover .custom-button {
+  opacity: 0.85;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=header.styles.css.map */
