@@ -11,14 +11,12 @@
   right: 40px;
   z-index: 5;
 
-  .cart-item {
-    padding: 5px;
-    height: 340px;
+  .cart-items {
+    height: 240px;
     display: flex;
     flex-direction: column;
     overflow: auto;
   }
-
   button {
     margin-top: auto;
   }
