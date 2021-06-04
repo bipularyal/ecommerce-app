@@ -10,3 +10,20 @@ export const addItemsToCart = (cartItems, cartItemToAdd) => {
     );
   return [...cartItems, { ...cartItemToAdd, quantity: 1 }];
 };
+
+export const subtractItemsFromCart = (cartItems, cartItemToSubtract) => {
+  console.log(cartItems + "THIS IS THE CART ITEM" + cartItemToSubtract);
+  const existingCartItem = cartItems.find(
+    (cartItem) => cartItem.id === cartItemToSubtract.id
+  );
+  if (existingCartItem.quantity === 1)
+    return cartItems.filter(
+      (cartItem) => cartItem.id !== cartItemToSubtract.id
+    );
+
+  return cartItems.map((cartItem) =>
+    cartItem.id === cartItemToSubtract.id
+      ? { ...cartItem, quantity: cartItem.quantity - 1 }
+      : cartItem
+  );
+};
