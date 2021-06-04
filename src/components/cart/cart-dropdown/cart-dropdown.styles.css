@@ -17,9 +17,8 @@
   z-index: 5;
 }
 
-.cart-dropdown .cart-item {
-  padding: 5px;
-  height: 340px;
+.cart-dropdown .cart-items {
+  height: 240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,5 +31,10 @@
 
 .cart-dropdown button {
   margin-top: auto;
+}
+
+.cart-dropdown .error-message {
+  font-size: 18px;
+  margin: 50px auto;
 }
 /*# sourceMappingURL=cart-dropdown.styles.css.map */
